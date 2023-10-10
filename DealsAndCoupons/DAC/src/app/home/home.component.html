@@ -1,0 +1,48 @@
+
+<body>
+<div class="img-area"></div>
+<div class="content">
+    <h1>Grab On</h1><br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, placeat?</p>
+</div>
+<div>
+    
+</div>
+<h2 class="title">Featured Products</h2>
+<div class="shop-category">
+    <div class="item-img" *ngFor="let item of items" (click)="showDetails(item.itemId)">
+        <img src="data:image/jpg;base64,{{item.image}}"/>
+        <p>{{item.itemName}}</p>
+        <p>{{item.rating}}</p>
+        <button class="btn1" type="button">Buy Now</button>
+        <button class="btn2" type="button" (click)="addToCart(item.itemId)">Add to Cart</button>
+    </div>
+</div>
+<div class="section">
+    <div class="feature-1">
+        <img src="../../assets/feat1.png" alt="">
+        <h2>Best Quality</h2>
+        <p>For us every single step matters. Our goal is to help you get best</p>
+    </div>
+    <div class="feature-2">
+        <img src="../../assets/feat2.png" alt="">
+        <h2>Best Offer</h2>
+        <p>Your favorite products made affordable for you. Hurry before the stock runs out</p>
+    </div>
+    <div class="feature-3">
+        <img src="../../assets/feat3.png" alt="">
+        <h2>Secure Payments</h2>
+        <p>We’re Here To Give You Exceptional Value Whenever You Need It Most.</p>
+    </div>
+</div>
+<div class="footer">
+    <div class="share">
+        <a href="#" class="btn">facebook</a>
+            <a href="#" class="btn">twitter</a>
+            <a href="#" class="btn">instagram</a>
+            <a href="#" class="btn">pinterest</a>
+            <a href="#" class="btn">linkedin</a>
+    </div>
+    <h1 class="link">copyright &copy; <span>www.D&C.com</span> | all rights reserved</h1>
+</div>
+</body>
